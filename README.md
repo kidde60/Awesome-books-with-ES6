@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 6. .stylelintrc
 7. run npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-8. run npx stylelint "\*_/_.{css,scss}"
+8. run  npx stylelint "**/*.{css,scss}"
 9. eslint:
    Run
    npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
