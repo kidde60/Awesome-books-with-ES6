@@ -1,15 +1,13 @@
 /* eslint-disable no-use-before-define */
-/* eslint-disable no-unused-vars */
 /* eslint-disable max-classes-per-file */
 import Book from './modules/book.js';
 import Date from './modules/date.js';
-
 // UI class to handle all UI events
 class UI {
   static showBooks(collection) {
     const table = document.querySelector('.table');
     table.innerHTML = '';
-    collection.forEach((book, index) => {
+    collection.forEach((book) => {
       const row = document.createElement('tr');
       const td1 = document.createElement('p');
       td1.innerHTML = `<strong>"${book.title}" by ${book.author}</strong>`;
